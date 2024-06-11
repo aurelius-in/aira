@@ -1,3 +1,105 @@
+/* Reset some default styles */
+body, h1, h2, p, select, button, input[type="button"] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+}
+
+#banner-img {
+    width: 100%;
+    height: auto;
+}
+
+#app-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #3b3f47;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+button, input[type="button"] {
+    padding: 12px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #21a1f1;
+}
+
+#result {
+    margin-top: 20px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#result h2 {
+    margin-bottom: 10px;
+    color: #61dafb;
+}
+
+#result p {
+    font-size: 1.1em;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
