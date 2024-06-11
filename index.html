@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Readiness Assessment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banner">
+        <img src="aira-banner.jpg" alt="AI Readiness Assessment Banner" id="banner-img">
+    </div>
+    <div id="app-content">
+        <div class="container">
+            <h1>AI Readiness Assessment Tool</h1>
+            <form id="assessment-form">
+                <div class="question">
+                    <label for="q1">Does your company have a clear AI strategy?</label>
+                    <select id="q1" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q2">Do you have dedicated AI personnel or teams?</label>
+                    <select id="q2" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q3">Is your data infrastructure prepared for AI implementation?</label>
+                    <select id="q3" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q4">Do you have a budget allocated for AI projects?</label>
+                    <select id="q4" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q5">Is there executive support for AI initiatives?</label>
+                    <select id="q5" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q6">Do you have a plan for integrating AI into business processes?</label>
+                    <select id="q6" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q7">Is there a culture of innovation and experimentation in your company?</label>
+                    <select id="q7" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q8">Do you have a system for managing and securing data?</label>
+                    <select id="q8" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q9">Are there clear metrics to measure the success of AI projects?</label>
+                    <select id="q9" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q10">Do you have a plan for continuous learning and development in AI?</label>
+                    <select id="q10" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                    </select>
+                </div>
+                <input type="button" id="submit-button" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="result-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Assessment Result</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
