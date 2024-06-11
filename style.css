@@ -124,6 +124,11 @@ button:hover, input[type="button"]:hover {
     border-radius: 12px;
     text-align: center;
     font-size: 1.2em; /* Increase font size */
+    color: #fff; /* Ensure text color is white for readability */
+}
+
+.modal-content p {
+    font-size: 1.2em; /* Ensure all paragraphs in modal have increased font size */
 }
 
 .close-button {
